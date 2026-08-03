@@ -1,0 +1,25 @@
+def getTotalX(a, b):
+    count = 0
+    for x in range(max(a), min(b) + 1):
+        valid = True
+
+        for num in a:
+            if x % num != 0:
+                valid = False
+                break
+
+        if not valid:
+            continue
+
+        for num in b:
+            if num % x != 0:
+                valid = False
+                break
+
+        if not valid:
+            continue
+
+        if valid:
+            count += 1
+
+    return count
