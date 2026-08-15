@@ -1,0 +1,10 @@
+count = 0
+seen = set()
+
+for x in ar:
+    if x not in seen:
+        y = ar.count(x)
+        count += y // 2
+        seen.add(x)
+
+return count
