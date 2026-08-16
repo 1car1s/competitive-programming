@@ -3,3 +3,4 @@ def pageCount(n, p):
     back = n // 2 - p // 2
     
     return min(front, back)
+#why is this so short?
