@@ -1,0 +1,14 @@
+def countingValleys(steps, path):
+    imissher = 0
+    valleys = 0
+
+    for x in path:
+        if x == "D":
+            imissher = imissher - 1
+        else:
+            imissher = imissher + 1
+
+            if imissher == 0:
+                valleys += 1
+
+    return valleys
